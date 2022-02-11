@@ -1,0 +1,22 @@
+/*
+Theme Name: Simple WP Handbook
+Theme URI: https://github.com/blobaugh/simple-wp-handbook
+Author: Seattle GiveCamp
+Aurhor: Ben Lobaugh
+Author URI: https://wordpress.org/
+Description: Simple handbook theme for WordPress sites. Driven by the Page post type.
+Requires at least: 5.9
+Tested up to: 5.9
+Requires PHP: 5.6
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+ol {
+	list-style-type: decimal
+}
+
+ul {
+	list-style-type: disc
+}
