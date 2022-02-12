@@ -1,28 +1,12 @@
 <?php
 
-add_action( '1wp_head', function() {
-	?>
-	<script src="https://cdn.tailwindcss.com?plugins=typography"></script>
-	<script>
-	tailwind.config = {
-		theme: {
-			extend: {
-				colors: {
-					clifford: '#da373d',
-				}
-			}
-		}
-	}
-	</script>
-	<style type="text/tailwindcss">
-	    @layer utilities {
-	      .content-auto {
-		content-visibility: auto;
-	      }
-	    }
-	  </style>
-	<?php
-});
+function theme_enqueue_scripts() {
+    wp_enqueue_style('theme_style', get_theme_file_uri('assets/css/main.min.css'));
+    wp_dequeue_style( 'wp-block-library' );
+  //  wp_dequeue_style( 'wp-block-navigation-view' );
+}
+add_action('wp_enqueue_scripts', 'theme_enqueue_scripts');
+
 /**
  * Remove the default ?ver that is put at the end of
  * scripts. This will help caching and performance
