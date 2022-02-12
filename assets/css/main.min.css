@@ -703,6 +703,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-align: center !important;
 }
 
+.leading-3 {
+  line-height: .75rem !important;
+}
+
+.leading-4 {
+  line-height: 1rem !important;
+}
+
+.leading-5 {
+  line-height: 1.25rem !important;
+}
+
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow) !important;
 }
